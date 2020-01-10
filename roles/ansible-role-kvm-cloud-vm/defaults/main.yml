@@ -1,0 +1,12 @@
+# KVM config
+kvm_vm_pool_dir: /var/lib/libvirt/images
+
+# Cloud Init config
+vm_data_dir: /root/kvm/vms
+vm_recreate: true
+cloud_init_vm_image: CentOS-7-x86_64-GenericCloud.qcow2
+cloud_init_vm_image_link: "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-1907.qcow2"
+# Latest image is from https://cloud.centos.org/centos/7/images/
+
+cloud_init_user_data: ""
+cloud_init_user_data: ""
