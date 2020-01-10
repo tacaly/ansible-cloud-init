@@ -18,4 +18,4 @@ MIT
 
 ## Author Information
  -Daniils Avdejevs
- -Frederick Ambo
+
