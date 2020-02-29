@@ -4,7 +4,8 @@ An [Ansible](https://www.ansible.com)
 
 ## Requirements
 
-Install "yum -y install ansible"
+Ansible on VM
+Azure account
 
 
 ## Role Variables
