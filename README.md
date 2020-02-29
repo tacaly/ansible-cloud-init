@@ -5,12 +5,11 @@ An [Ansible](https://www.ansible.com)
 ## Requirements
 
 Ansible on VM
+
 Azure account
 
 
 ## Role Variables
-
-[defaults/main.yml](defaults/main.yml)
 
 ## Dependencies
 
