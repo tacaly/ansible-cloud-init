@@ -4,7 +4,7 @@ An [Ansible](https://www.ansible.com)
 
 ## Requirements
 
-Install cloud init "yum -y install ansible"
+Install "yum -y install ansible"
 
 
 ## Role Variables
