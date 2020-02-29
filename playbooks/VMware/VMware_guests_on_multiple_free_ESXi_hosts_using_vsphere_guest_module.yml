@@ -1,0 +1,48 @@
+- hosts: localhost
+   vars:
+     esxi_user: root
+     esxi_password: passwordxyz
+     guests:
+       - esx_host: esxi1
+         vmname:
+           - vm1
+       - esx_host: esxi4
+         vmname:
+           - vm3
+           - vm4
+           - vm5
+
+   tasks:
+     - vsphere_guest:
+         vcenter_hostname: "{{ item.0.esx_host }}"
+         username: "{{ esxi_user }}"
+         password: "{{ esxi_password }}"
+         guest: "{{ item.1 }}"
+         state: powered_on
+         vm_extra_config:
+           vcpu.hotadd: yes
+           mem.hotadd:  yes
+           notes: This is a test VM
+         vm_disk:
+           disk1:
+             size_gb: 20
+             type: thin
+             datastore: store4
+         vm_nic:
+           nic1:
+             type: vmxnet3
+             network: VM01
+             network_type: standard
+         vm_hardware:
+            memory_mb: 2048
+           num_cpus: 2
+           osid: centos64Guest
+           scsi: lsi
+           vm_cdrom:
+             type: client
+         esxi:
+           datacenter: ha-datacenter
+           hostname: "{{ item.0.esx_host }}"
+       with_subelements:
+         - "{{ guests }}"
+         - vmname
