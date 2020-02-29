@@ -1,4 +1,4 @@
-# ansible-cloud-init
+# ansible-init
 
 An [Ansible](https://www.ansible.com) 
 
