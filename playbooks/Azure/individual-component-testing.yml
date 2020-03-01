@@ -6,7 +6,7 @@
     - name: Create resource group
       azure_rm_resourcegroup:
         name: testing
-        location: eastus
+        location: westeu
       register: rg
     - debug:
         var: rg
