@@ -21,4 +21,5 @@ MIT
 
 ## Author Information
  -Daniils Avdejevs
+ Mentor: Frederick Ambo
 
