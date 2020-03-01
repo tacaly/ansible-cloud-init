@@ -67,12 +67,12 @@
       azure_rm_virtualmachine:
         resource_group: testing
         name: testvm001
-        vm_size: Standard_A1
+        vm_size: Standard_A1_v2
         storage_account: testaccount696
         storage_container: testvm001
         storage_blob: testvm001.vhd
-        admin_username: admin
-        admin_password: Password!
+        admin_username: ansiblevmadmin
+        admin_password: Password00!
         network_interfaces: testnic001
         image:
           offer: CentOS
